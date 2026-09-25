@@ -1,0 +1,1199 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Indian Jobs Network — हर योग्यता की अपनी मुहर</title>
+<meta name="description" content="पदमुद्रा: योग्यता के अनुसार नौकरी खोजें और आवेदन करें — 10वीं पास से लेकर PhD और भविष्य की माँग वाले क्षेत्रों तक।">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,500;9..144,600;9..144,700;9..144,900&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500&family=Noto+Sans+Devanagari:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#16233A;
+    --ink-2:#223250;
+    --ink-soft:#2E4066;
+    --paper:#F3EEE2;
+    --paper-2:#EAE1CB;
+    --paper-3:#FBF8F1;
+    --brass:#B98B4E;
+    --brass-dark:#8F6A38;
+    --brass-light:#D9B77E;
+    --stamp:#9C3D34;
+    --stamp-dark:#7A2E27;
+    --slate:#5B6472;
+    --white:#FFFFFF;
+    --line:rgba(22,35,58,0.16);
+    --line-soft:rgba(22,35,58,0.09);
+    --shadow:0 10px 30px rgba(22,35,58,0.14);
+    --shadow-lg:0 22px 50px rgba(22,35,58,0.22);
+    --glow-brass:0 0 0 1px rgba(185,139,78,0.35), 0 12px 34px rgba(185,139,78,0.22);
+    --grad-brass:linear-gradient(135deg, var(--brass-light), var(--brass) 55%, var(--brass-dark));
+    --grad-ink:linear-gradient(160deg, var(--ink-soft), var(--ink) 60%, #0F1826);
+    --radius-sm:4px;
+    --radius-md:8px;
+    --serif:'Fraunces','Noto Sans Devanagari',serif;
+    --sans:'IBM Plex Sans','Noto Sans Devanagari',sans-serif;
+    --mono:'IBM Plex Mono',monospace;
+  }
+
+  *,*::before,*::after{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  @media (prefers-reduced-motion: reduce){
+    html{scroll-behavior:auto;}
+    *,*::before,*::after{animation-duration:0.001ms !important;animation-iteration-count:1 !important;transition-duration:0.001ms !important;}
+  }
+  body{
+    margin:0;
+    font-family:var(--sans);
+    color:var(--ink);
+    background:var(--paper);
+    line-height:1.55;
+    -webkit-font-smoothing:antialiased;
+    position:relative;
+  }
+  body::before{
+    content:"";
+    position:fixed;inset:0;pointer-events:none;z-index:1000;
+    opacity:.05;mix-blend-mode:multiply;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  }
+  h1 sup, h2 sup{font-size:.5em;}
+  ::selection{background:var(--brass-light);color:var(--ink);}
+  h1,h2,h3,h4{
+    font-family:var(--serif);
+    font-weight:600;
+    margin:0 0 .5em;
+    color:var(--ink);
+    line-height:1.15;
+  }
+  p{margin:0 0 1em;color:var(--slate);}
+  a{color:inherit;text-decoration:none;}
+  ul{list-style:none;margin:0;padding:0;}
+  button{font-family:inherit;cursor:pointer;}
+  img,svg{display:block;max-width:100%;}
+  :focus-visible{outline:3px solid var(--brass-dark);outline-offset:2px;}
+
+  .wrap{max-width:1180px;margin:0 auto;padding:0 28px;}
+  .eyebrow-note{font-size:.8rem;color:var(--slate);}
+
+  /* ---------- Buttons ---------- */
+  .btn{
+    position:relative;overflow:hidden;
+    display:inline-flex;align-items:center;justify-content:center;gap:.5em;
+    padding:.75em 1.6em;border-radius:var(--radius-sm);
+    border:1.5px solid transparent;font-weight:600;font-size:.95rem;
+    transition:transform .18s ease, box-shadow .18s ease, background .18s ease, color .18s ease, border-color .18s ease;
+    white-space:nowrap;
+  }
+  .btn:active{transform:translateY(1px);}
+  .btn-brass{background:var(--grad-brass);color:var(--ink);border-color:var(--brass-dark);box-shadow:0 1px 0 rgba(255,255,255,0.4) inset, 0 6px 16px rgba(143,106,56,0.25);}
+  .btn-brass::after{
+    content:"";position:absolute;top:0;left:-60%;width:40%;height:100%;
+    background:linear-gradient(115deg, transparent, rgba(255,255,255,0.55), transparent);
+    transform:skewX(-18deg);transition:left .5s ease;
+  }
+  .btn-brass:hover{box-shadow:var(--glow-brass), 0 6px 16px rgba(143,106,56,0.25);transform:translateY(-1px);}
+  .btn-brass:hover::after{left:130%;}
+  .btn-ink{background:var(--grad-ink);color:var(--paper-3);border-color:var(--ink);}
+  .btn-ink:hover{box-shadow:var(--shadow-lg);transform:translateY(-1px);}
+  .btn-outline{background:transparent;color:var(--ink);border-color:var(--line);}
+  .btn-outline:hover{border-color:var(--brass-dark);color:var(--brass-dark);}
+  .btn-sm{padding:.5em 1.05em;font-size:.85rem;}
+  .btn-block{width:100%;}
+
+  /* ---------- Header ---------- */
+  header.site-head{
+    position:sticky;top:0;z-index:60;
+    background:var(--paper-3);
+    border-bottom:1px solid var(--line);
+  }
+  .head-row{display:flex;align-items:center;justify-content:space-between;padding:14px 28px;gap:20px;}
+  .brand{display:flex;align-items:center;gap:12px;}
+  .brand-seal{width:42px;height:42px;flex:none;}
+  .brand-text .name{font-family:var(--serif);font-weight:700;font-size:1.35rem;letter-spacing:.2px;color:var(--ink);}
+  .brand-text .tag{font-size:.72rem;color:var(--brass-dark);font-weight:600;}
+  nav.main-nav ul{display:flex;gap:28px;}
+  nav.main-nav a{position:relative;font-size:.92rem;font-weight:500;color:var(--ink-2);padding:6px 0;display:inline-block;}
+  nav.main-nav a::after{
+    content:"";position:absolute;left:0;right:100%;bottom:0;height:2px;background:var(--grad-brass);
+    transition:right .2s ease;
+  }
+  nav.main-nav a:hover::after{right:0;}
+  .head-actions{display:flex;align-items:center;gap:10px;}
+  .nav-toggle{display:none;background:none;border:1.5px solid var(--line);border-radius:var(--radius-sm);padding:8px 10px;}
+  .nav-toggle span{display:block;width:20px;height:2px;background:var(--ink);margin:4px 0;}
+
+  @media (max-width:920px){
+    nav.main-nav{
+      position:absolute;top:100%;left:0;right:0;background:var(--paper-3);
+      border-bottom:1px solid var(--line);
+      max-height:0;overflow:hidden;transition:max-height .25s ease;
+    }
+    nav.main-nav.open{max-height:400px;}
+    nav.main-nav ul{flex-direction:column;gap:0;padding:8px 28px 18px;}
+    nav.main-nav a{display:block;padding:10px 0;border-bottom:1px solid var(--line-soft);}
+    .nav-toggle{display:block;}
+    .head-actions .btn-outline{display:none;}
+  }
+
+  /* ---------- Hero ---------- */
+  .hero{
+    position:relative;overflow:hidden;
+    background:
+      repeating-linear-gradient(180deg, transparent, transparent 33px, var(--line-soft) 34px),
+      radial-gradient(760px 420px at 88% 8%, rgba(185,139,78,0.16), transparent 60%),
+      var(--paper);
+    border-bottom:1px solid var(--line);
+    padding:72px 0 60px;
+  }
+  .hero::after{
+    content:"";position:absolute;left:0;right:0;bottom:-1px;height:14px;
+    background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='14'%3E%3Ccircle cx='7' cy='0' r='7' fill='%23F3EEE2'/%3E%3Ccircle cx='21' cy='0' r='7' fill='%23F3EEE2'/%3E%3C/svg%3E");
+    background-size:28px 14px;
+  }
+  .hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:56px;align-items:center;position:relative;z-index:1;}
+  .hero h1{font-size:clamp(2.2rem,3.8vw,3.35rem);max-width:14ch;text-shadow:0 1px 0 rgba(255,255,255,0.5);}
+  .hero .lede{font-size:1.08rem;max-width:46ch;}
+  .search-card{
+    margin-top:28px;background:var(--paper-3);border:1px solid var(--line);border-top:3px solid var(--brass);
+    border-radius:var(--radius-md);padding:18px;box-shadow:var(--shadow-lg);
+  }
+  .search-row{display:grid;grid-template-columns:1.4fr 1fr 1fr auto;gap:10px;}
+  .field-mini label{display:block;font-size:.72rem;font-weight:600;color:var(--slate);margin-bottom:4px;}
+  .field-mini input,.field-mini select{
+    width:100%;padding:.65em .7em;border:1.5px solid var(--line);border-radius:var(--radius-sm);
+    font-family:inherit;font-size:.92rem;background:var(--white);color:var(--ink);
+  }
+  .field-mini input:focus,.field-mini select:focus{border-color:var(--brass-dark);}
+  @media (max-width:720px){.search-row{grid-template-columns:1fr;}}
+
+  .hero-side{display:flex;flex-direction:column;align-items:center;gap:26px;}
+  .seal-stage{position:relative;width:280px;height:280px;display:flex;align-items:center;justify-content:center;}
+  .seal-stage::before{
+    content:"";position:absolute;inset:0;border-radius:50%;
+    background:radial-gradient(circle, rgba(185,139,78,0.22), transparent 68%);
+    filter:blur(2px);
+  }
+  .seal-rosette{position:absolute;inset:0;color:var(--brass-dark);opacity:.45;}
+  .seal-wrap{width:230px;height:230px;position:relative;filter:drop-shadow(0 14px 22px rgba(22,35,58,0.22));transform-origin:50% 50%;}
+  .seal-wrap.stamp-in{animation:stampIn .7s cubic-bezier(.2,.9,.3,1.1) both;}
+  @keyframes stampIn{
+    0%{opacity:0;transform:scale(1.5) rotate(-8deg);}
+    60%{opacity:1;transform:scale(.96) rotate(1deg);}
+    100%{opacity:1;transform:scale(1) rotate(0deg);}
+  }
+  .stat-ledger{width:100%;border-top:1px solid var(--line);}
+  .stat-ledger .stat-row{
+    display:flex;justify-content:space-between;padding:12px 4px;border-bottom:1px solid var(--line-soft);
+  }
+  .stat-ledger .stat-row .num{font-family:var(--mono);font-weight:500;color:var(--stamp);}
+  .stat-ledger .stat-row .label{color:var(--slate);font-size:.88rem;}
+
+  @media (max-width:920px){
+    .hero-grid{grid-template-columns:1fr;}
+    .hero-side{order:-1;}
+    .seal-wrap{width:150px;height:150px;}
+  }
+
+  /* ---------- Section shell ---------- */
+  section{padding:72px 0;}
+  .section-head{max-width:640px;margin-bottom:38px;}
+  .section-head h2{font-size:clamp(1.55rem,2.4vw,2.1rem);}
+  .section-head p{font-size:1rem;}
+  .section-alt{background:var(--paper-2);}
+
+  /* ---------- Category cards ---------- */
+  .cat-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;}
+  @media (max-width:980px){.cat-grid{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:560px){.cat-grid{grid-template-columns:1fr;}}
+  .cat-card{
+    background:var(--paper-3);border:1px solid var(--line);border-radius:var(--radius-md);
+    padding:24px 20px 20px;display:flex;flex-direction:column;gap:10px;position:relative;overflow:hidden;
+    transition:border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+  }
+  .cat-card::before{
+    content:"";position:absolute;top:0;left:0;right:0;height:3px;background:var(--grad-brass);
+    transform:scaleX(0);transform-origin:left;transition:transform .25s ease;
+  }
+  .cat-card::after{
+    content:"";position:absolute;top:0;right:0;width:0;height:0;
+    border-style:solid;border-width:0 26px 26px 0;border-color:transparent var(--paper-2) transparent transparent;
+    transition:border-color .2s ease;
+  }
+  .cat-card:hover{border-color:var(--brass-dark);box-shadow:var(--shadow-lg);transform:translateY(-3px);}
+  .cat-card:hover::before{transform:scaleX(1);}
+  .cat-card:hover::after{border-color:transparent var(--brass-light) transparent transparent;}
+  .cat-icon{width:38px;height:38px;color:var(--stamp);transition:transform .2s ease;}
+  .cat-card:hover .cat-icon{transform:scale(1.08) rotate(-3deg);}
+  .cat-card h3{font-size:1.05rem;margin-bottom:2px;}
+  .cat-card .cat-sub{font-size:.82rem;color:var(--slate);margin-bottom:6px;}
+  .cat-count{font-family:var(--mono);font-size:.78rem;color:var(--brass-dark);}
+  .cat-card .btn{margin-top:auto;align-self:flex-start;}
+
+  /* ---------- Future skills band ---------- */
+  .future-band{
+    background:
+      radial-gradient(600px 300px at 12% 0%, rgba(185,139,78,0.14), transparent 60%),
+      var(--grad-ink);
+    color:var(--paper-3);
+  }
+  .future-band .section-head h2{color:var(--paper-3);}
+  .future-band .section-head p{color:#B9C2D6;}
+  .future-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;}
+  @media (max-width:980px){.future-grid{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:560px){.future-grid{grid-template-columns:1fr;}}
+  .future-card{
+    background:var(--ink-2);border:1px solid rgba(217,183,126,0.25);border-radius:var(--radius-md);
+    padding:20px;display:flex;flex-direction:column;gap:8px;
+    transition:border-color .2s ease, box-shadow .2s ease, transform .2s ease;
+  }
+  .future-card:hover{border-color:var(--brass-light);box-shadow:0 0 0 1px rgba(217,183,126,0.35), 0 16px 34px rgba(0,0,0,0.35);transform:translateY(-3px);}
+  .future-card .cat-icon{color:var(--brass-light);}
+  .future-card h3{color:var(--paper-3);font-size:1rem;}
+  .future-card p{color:#B9C2D6;font-size:.86rem;margin-bottom:4px;}
+  .future-card .btn{align-self:flex-start;margin-top:auto;}
+
+  /* ---------- Filter bar ---------- */
+  .filter-bar{display:flex;flex-wrap:wrap;gap:10px;align-items:center;margin-bottom:26px;}
+  .chip{
+    padding:.45em 1em;border:1.5px solid var(--line);border-radius:999px;font-size:.82rem;
+    background:var(--paper-3);color:var(--ink-2);font-weight:500;
+  }
+  .chip.active{background:var(--ink);color:var(--paper-3);border-color:var(--ink);}
+  .filter-search{
+    margin-left:auto;min-width:220px;padding:.5em .8em;border:1.5px solid var(--line);
+    border-radius:var(--radius-sm);font-family:inherit;font-size:.88rem;background:var(--white);
+  }
+  @media (max-width:640px){.filter-search{margin-left:0;width:100%;}}
+
+  /* ---------- Job ledger ---------- */
+  .ledger{border-top:1px solid var(--line);}
+  .job-row{
+    display:grid;grid-template-columns:2fr 1fr 1fr 1fr auto;gap:16px;align-items:center;
+    padding:18px 10px;margin:0 -10px;border-bottom:1px solid var(--line-soft);border-radius:var(--radius-sm);
+    transition:background .15s ease;
+  }
+  .job-row:hover{background:var(--paper-3);}
+  .job-row .job-title{font-family:var(--serif);font-weight:600;font-size:1.02rem;}
+  .job-row .company{font-size:.85rem;color:var(--slate);}
+  .job-row .meta-label{font-size:.68rem;text-transform:none;color:var(--brass-dark);font-weight:600;display:block;margin-bottom:2px;}
+  .job-row .meta-val{font-size:.88rem;color:var(--ink-2);}
+  .job-row .posted{font-size:.76rem;color:var(--slate);}
+  @media (max-width:860px){
+    .job-row{grid-template-columns:1fr 1fr;grid-auto-rows:auto;}
+    .job-row .apply-cell{grid-column:1/-1;}
+  }
+  .empty-note{padding:30px 4px;color:var(--slate);font-style:italic;}
+
+  /* ---------- How it works ---------- */
+  .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;position:relative;}
+  @media (max-width:900px){.steps{grid-template-columns:repeat(2,1fr);}}
+  @media (max-width:560px){.steps{grid-template-columns:1fr;}}
+  .steps::before{
+    content:"";position:absolute;top:19px;left:6%;right:6%;height:0;
+    border-top:1.5px dashed var(--line);z-index:0;
+  }
+  @media (max-width:900px){.steps::before{display:none;}}
+  .step{position:relative;padding-top:0;z-index:1;}
+  .step .step-num{
+    width:38px;height:38px;border-radius:50%;background:var(--grad-brass);color:var(--ink);
+    display:flex;align-items:center;justify-content:center;font-family:var(--mono);font-weight:700;font-size:.85rem;
+    margin-bottom:14px;box-shadow:0 0 0 4px var(--paper), 0 4px 10px rgba(143,106,56,0.3);
+  }
+  .step h3{font-size:1.02rem;}
+  .step p{font-size:.9rem;}
+
+  /* ---------- Track applications ---------- */
+  .track-table{width:100%;border-collapse:collapse;background:var(--paper-3);border:1px solid var(--line);border-radius:var(--radius-md);overflow:hidden;}
+  .track-table th,.track-table td{padding:12px 16px;text-align:left;font-size:.88rem;border-bottom:1px solid var(--line-soft);}
+  .track-table th{background:var(--paper-2);font-weight:600;color:var(--ink-2);font-size:.78rem;border-top:2px solid var(--brass);}
+  .track-table tbody tr{transition:background .15s ease;}
+  .track-table tbody tr:hover{background:var(--paper-2);}
+  .track-table td.id-cell{font-family:var(--mono);color:var(--stamp);font-weight:600;}
+  .status-pill{display:inline-block;padding:.3em .8em;border-radius:999px;font-size:.76rem;font-weight:600;background:#F0E6D2;color:var(--brass-dark);}
+  .track-empty{padding:40px 24px;text-align:center;background:var(--paper-3);border:1px dashed var(--line);border-radius:var(--radius-md);color:var(--slate);}
+
+  /* ---------- Footer ---------- */
+  footer{
+    position:relative;overflow:hidden;background:var(--grad-ink);color:#C9D1E0;padding:56px 0 24px;
+  }
+  footer::before{
+    content:"";position:absolute;right:-60px;bottom:-60px;width:260px;height:260px;border-radius:50%;
+    border:2px dashed rgba(217,183,126,0.16);
+  }
+  footer::after{
+    content:"";position:absolute;right:-20px;bottom:-20px;width:180px;height:180px;border-radius:50%;
+    border:1px solid rgba(217,183,126,0.14);
+  }
+  .foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;margin-bottom:40px;}
+  @media (max-width:800px){.foot-grid{grid-template-columns:1fr 1fr;}}
+  @media (max-width:480px){.foot-grid{grid-template-columns:1fr;}}
+  footer h4{color:var(--paper-3);font-size:.95rem;margin-bottom:14px;}
+  footer li{margin-bottom:8px;font-size:.86rem;}
+  footer a:hover{color:var(--brass-light);}
+  .foot-brand .name{font-family:var(--serif);color:var(--paper-3);font-size:1.2rem;font-weight:700;}
+  .foot-bottom{border-top:1px solid rgba(255,255,255,0.12);padding-top:20px;display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.8rem;color:#8794AC;}
+
+  /* ---------- Modal ---------- */
+  .modal-backdrop{
+    position:fixed;inset:0;background:rgba(22,35,58,0.55);display:none;
+    align-items:flex-start;justify-content:center;padding:40px 16px;z-index:100;overflow-y:auto;
+  }
+  .modal-backdrop.open{display:flex;}
+  .modal{
+    background:var(--paper-3);width:100%;max-width:620px;border-radius:var(--radius-md);
+    box-shadow:0 24px 70px rgba(0,0,0,0.4);overflow:hidden;margin:auto 0;
+    border-top:3px solid var(--brass);
+  }
+  .modal-head{
+    position:relative;overflow:hidden;
+    background:var(--grad-ink);color:var(--paper-3);padding:20px 26px;display:flex;justify-content:space-between;align-items:flex-start;gap:12px;
+  }
+  .modal-head::before{
+    content:"";position:absolute;top:-30px;right:-30px;width:90px;height:90px;border-radius:50%;
+    border:2px dashed rgba(217,183,126,0.4);
+  }
+  .modal-head h3{color:var(--paper-3);margin-bottom:2px;font-size:1.15rem;}
+  .modal-head .sub{color:#B9C2D6;font-size:.82rem;}
+  .modal-close{background:none;border:none;color:var(--paper-3);font-size:1.3rem;line-height:1;padding:4px;}
+  .modal-body{padding:26px;max-height:70vh;overflow-y:auto;}
+  .form-grid{display:grid;grid-template-columns:1fr 1fr;gap:14px;}
+  .form-field{display:flex;flex-direction:column;gap:5px;}
+  .form-field.full{grid-column:1/-1;}
+  .form-field label{font-size:.8rem;font-weight:600;color:var(--ink-2);}
+  .form-field input,.form-field select,.form-field textarea{
+    padding:.65em .75em;border:1.5px solid var(--line);border-radius:var(--radius-sm);
+    font-family:inherit;font-size:.92rem;background:var(--white);color:var(--ink);
+  }
+  .form-field input:focus,.form-field select:focus,.form-field textarea:focus{border-color:var(--brass-dark);}
+  .form-section-title{
+    grid-column:1/-1;font-size:.78rem;font-weight:700;text-transform:none;color:var(--brass-dark);
+    border-top:1px dashed var(--line);padding-top:14px;margin-top:4px;
+  }
+  .form-field.full:first-child .form-section-title{border-top:none;padding-top:0;margin-top:0;}
+  .modal-foot{padding:18px 26px 26px;display:flex;gap:12px;justify-content:flex-end;border-top:1px solid var(--line-soft);}
+  .success-panel{padding:20px 4px;text-align:center;}
+  .success-seal{width:70px;height:70px;margin:0 auto 16px;color:var(--stamp);}
+  .success-panel .app-id{font-family:var(--mono);color:var(--stamp);font-weight:600;}
+
+  @media (max-width:520px){.form-grid{grid-template-columns:1fr;}.form-field{grid-column:1/-1 !important;}}
+
+  .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;}
+</style>
+</head>
+<body>
+
+<header class="site-head">
+  <div class="head-row wrap" style="position:relative;">
+    <div class="brand">
+      <svg class="brand-seal" viewBox="0 0 60 60" aria-hidden="true">
+        <circle cx="30" cy="30" r="27" fill="none" stroke="#9C3D34" stroke-width="2.5" stroke-dasharray="4 3"/>
+        <circle cx="30" cy="30" r="19" fill="none" stroke="#16233A" stroke-width="1.5"/>
+        <path d="M22 32 L27 37 L39 24" fill="none" stroke="#B98B4E" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div class="brand-text">
+        <div class="name">पदमुद्रा</div>
+        <div class="tag">हर योग्यता की अपनी मुहर</div>
+      </div>
+    </div>
+    <nav class="main-nav" id="mainNav">
+      <ul>
+        <li><a href="#categories">योग्यता श्रेणियाँ</a></li>
+        <li><a href="#future">भविष्य के क्षेत्र</a></li>
+        <li><a href="#jobs">नौकरी लेजर</a></li>
+        <li><a href="#how">कैसे काम करता है</a></li>
+        <li><a href="#track">आवेदन ट्रैक करें</a></li>
+      </ul>
+    </nav>
+    <div class="head-actions">
+      <button class="btn btn-outline btn-sm" type="button" onclick="alert('डेमो: लॉगिन फीचर बैकएंड से जुड़ने पर सक्रिय होगा।')">लॉगिन</button>
+      <button class="btn btn-brass btn-sm" type="button" onclick="openModal(null,'future')">मुफ़्त पंजीकरण</button>
+      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="mainNav" aria-label="मेनू खोलें">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow-note">10वीं पास से लेकर PhD और उभरते तकनीकी क्षेत्रों तक</p>
+      <h1>आपकी योग्यता जो कहती है, हम वही अवसर लाते हैं</h1>
+      <p class="lede">डिप्लोमा, स्नातक, स्नातकोत्तर या विशेष प्रमाणपत्र — हर श्रेणी के लिए अलग, सटीक आवेदन फ़ॉर्म। एक जगह खोजें, सही फ़ॉर्म भरें, आवेदन को अंत तक ट्रैक करें।</p>
+
+      <form class="search-card" id="heroSearchForm">
+        <div class="search-row">
+          <div class="field-mini">
+            <label for="hsKeyword">पद या कंपनी</label>
+            <input id="hsKeyword" type="text" placeholder="जैसे: लैब तकनीशियन, TCS">
+          </div>
+          <div class="field-mini">
+            <label for="hsCategory">योग्यता</label>
+            <select id="hsCategory"><option value="">सभी</option></select>
+          </div>
+          <div class="field-mini">
+            <label for="hsLocation">शहर</label>
+            <input id="hsLocation" type="text" placeholder="जैसे: जयपुर">
+          </div>
+          <div class="field-mini" style="align-self:flex-end;">
+            <button type="submit" class="btn btn-ink">खोजें</button>
+          </div>
+        </div>
+      </form>
+    </div>
+
+    <div class="hero-side">
+      <div class="seal-stage">
+        <svg class="seal-rosette" viewBox="0 0 280 280" aria-hidden="true">
+          <g fill="none" stroke="currentColor" stroke-width="0.6">
+            <circle cx="140" cy="140" r="130"/>
+            <circle cx="140" cy="140" r="120"/>
+            <g id="rosettePetals"></g>
+          </g>
+        </svg>
+        <svg class="seal-wrap" id="heroSeal" viewBox="0 0 200 200" aria-hidden="true">
+          <defs>
+            <radialGradient id="sealFace" cx="45%" cy="35%" r="70%">
+              <stop offset="0%" stop-color="#FBF8F1"/>
+              <stop offset="70%" stop-color="#F3EEE2"/>
+              <stop offset="100%" stop-color="#E6DCC3"/>
+            </radialGradient>
+            <linearGradient id="brassStroke" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#D9B77E"/>
+              <stop offset="100%" stop-color="#8F6A38"/>
+            </linearGradient>
+          </defs>
+          <circle cx="100" cy="100" r="94" fill="url(#sealFace)"/>
+          <circle cx="100" cy="100" r="92" fill="none" stroke="#9C3D34" stroke-width="3" stroke-dasharray="6 5"/>
+          <circle cx="100" cy="100" r="70" fill="none" stroke="#16233A" stroke-width="1.5"/>
+          <path id="sealArcTop" d="M 40 100 A 60 60 0 0 1 160 100" fill="none"/>
+          <path id="sealArcBottom" d="M 160 100 A 60 60 0 0 1 40 100" fill="none"/>
+          <text font-family="IBM Plex Sans" font-size="12" fill="#16233A" font-weight="600">
+            <textPath href="#sealArcTop" startOffset="50%" text-anchor="middle">पदमुद्रा · योग्यता सत्यापित</textPath>
+          </text>
+          <text font-family="IBM Plex Sans" font-size="12" fill="#16233A" font-weight="600">
+            <textPath href="#sealArcBottom" startOffset="50%" text-anchor="middle">आवेदन · साक्षात्कार · नियुक्ति</textPath>
+          </text>
+          <circle cx="100" cy="100" r="34" fill="none" stroke="url(#brassStroke)" stroke-width="1.5"/>
+          <path d="M78 96 L94 112 L124 78" fill="none" stroke="url(#brassStroke)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </div>
+
+      <div class="stat-ledger">
+        <div class="stat-row"><span class="label">सक्रिय पद</span><span class="num" id="statJobs">—</span></div>
+        <div class="stat-row"><span class="label">योग्यता श्रेणियाँ</span><span class="num" id="statCats">—</span></div>
+        <div class="stat-row"><span class="label">पंजीकृत नियोक्ता</span><span class="num">2,140+</span></div>
+        <div class="stat-row"><span class="label">प्रोसेस किए आवेदन</span><span class="num">1,86,300+</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="categories">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>योग्यता अनुसार अवसर खोजें</h2>
+      <p>हर श्रेणी का अपना पंजीकरण फ़ॉर्म है — केवल वही जानकारी माँगी जाती है जो उस योग्यता के लिए ज़रूरी है।</p>
+    </div>
+    <div class="cat-grid" id="catGrid"></div>
+  </div>
+</section>
+
+<section class="future-band" id="future">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>भविष्य की माँग वाले क्षेत्र</h2>
+      <p>नई तकनीक और उभरते उद्योगों से जुड़े कौशल — पारंपरिक डिग्री न होने पर भी प्रमाणपत्र और पोर्टफोलियो से आवेदन संभव।</p>
+    </div>
+    <div class="future-grid" id="futureGrid"></div>
+  </div>
+</section>
+
+<section id="jobs" class="section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>नौकरी लेजर</h2>
+      <p>श्रेणी के अनुसार छाँटें या पद/कंपनी/शहर से खोजें।</p>
+    </div>
+
+    <div class="filter-bar" id="filterBar">
+      <input type="text" class="filter-search" id="jobSearch" placeholder="पद, कंपनी या शहर खोजें…">
+    </div>
+
+    <div class="ledger" id="jobLedger"></div>
+  </div>
+</section>
+
+<section id="how">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>कैसे काम करता है</h2>
+      <p>चार सीधे चरणों में, योग्यता से नियुक्ति तक।</p>
+    </div>
+    <div class="steps">
+      <div class="step"><span class="step-num">01</span><h3>योग्यता चुनें</h3><p>अपनी शिक्षा या कौशल श्रेणी चुनें ताकि सही फ़ॉर्म खुले।</p></div>
+      <div class="step"><span class="step-num">02</span><h3>फ़ॉर्म भरें</h3><p>केवल ज़रूरी जानकारी — प्रमाणपत्र संख्या, अनुभव, दस्तावेज़।</p></div>
+      <div class="step"><span class="step-num">03</span><h3>मुहर लगे आवेदन नंबर पाएं</h3><p>हर आवेदन को एक विशिष्ट संदर्भ संख्या मिलती है।</p></div>
+      <div class="step"><span class="step-num">04</span><h3>प्रगति ट्रैक करें</h3><p>समीक्षा से साक्षात्कार तक स्थिति एक ही जगह देखें।</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="track" class="section-alt">
+  <div class="wrap">
+    <div class="section-head">
+      <h2>आवेदन ट्रैक करें</h2>
+      <p>इस सत्र में जमा किए गए आपके आवेदन यहाँ दिखेंगे।</p>
+    </div>
+    <div id="trackArea"></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <div class="name">पदमुद्रा</div>
+        <p style="color:#8794AC;margin-top:10px;font-size:.86rem;">योग्यता-आधारित नौकरी मंच — हर डिग्री, डिप्लोमा और कौशल के लिए सटीक आवेदन प्रक्रिया।</p>
+      </div>
+      <div>
+        <h4>उम्मीदवारों के लिए</h4>
+        <ul>
+          <li><a href="#categories">योग्यता श्रेणियाँ</a></li>
+          <li><a href="#jobs">नौकरी लेजर</a></li>
+          <li><a href="#track">आवेदन स्थिति</a></li>
+          <li><a href="#how">प्रक्रिया समझें</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>नियोक्ताओं के लिए</h4>
+        <ul>
+          <li><a href="#" onclick="event.preventDefault();alert('डेमो: नियोक्ता पोर्टल बैकएंड से जुड़ने पर सक्रिय होगा।')">पद प्रकाशित करें</a></li>
+          <li><a href="#" onclick="event.preventDefault();alert('डेमो फीचर')">उम्मीदवार खोजें</a></li>
+          <li><a href="#" onclick="event.preventDefault();alert('डेमो फीचर')">मूल्य निर्धारण</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>संपर्क</h4>
+        <ul>
+          <li>सहायता: support@padmudra.example</li>
+          <li>जयपुर, राजस्थान, भारत</li>
+          <li>सोम–शनि, 10AM–7PM</li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 पदमुद्रा. सभी अधिकार सुरक्षित.</span>
+      <span>यह एक डेमो फ़्रंटएंड है — वास्तविक उपयोग हेतु बैकएंड API से जोड़ें।</span>
+    </div>
+  </div>
+</footer>
+
+<div class="modal-backdrop" id="modalBackdrop">
+  <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal-head">
+      <div>
+        <h3 id="modalTitle">आवेदन फ़ॉर्म</h3>
+        <div class="sub" id="modalSub">श्रेणी</div>
+      </div>
+      <button class="modal-close" id="modalCloseBtn" aria-label="फ़ॉर्म बंद करें">✕</button>
+    </div>
+    <div class="modal-body" id="modalBody"></div>
+  </div>
+</div>
+
+<script>
+(function(){
+  "use strict";
+
+  /* ---------------- Icon set (minimal line icons) ---------------- */
+  function icon(name){
+    var icons = {
+      school: '<svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M2 8l10-5 10 5-10 5-10-5z"/><path d="M6 11v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5"/><path d="M22 8v6"/></svg>',
+      wrench: '<svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14.7 6.3a4 4 0 1 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.3-.7-.7-2.3 2.6-2.6z"/></svg>',
+      chip: '<svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="1.5"/><path d="M9 3v3M15 3v3M9 18v3M15 18v3M3 9h3M3 15h3M18 9h3M18 15h3"/></svg>',
+      calc: '<svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="2" width="16" height="20" rx="1.5"/><path d="M8 6h8M8 11h1M12 11h1M16 11h1M8 15h1M12 15h1M16 15h1M8 19h1M12 19h1M16 19h1"/></svg>',
+      atom: '<svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="1.5" fill="currentColor" stroke="none"/><ellipse cx="12" cy="12" rx="9" ry="3.5"/><ellipse cx="12" cy="12" rx="9" ry="3.5" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="9" ry="3.5" transform="rotate(120 12 12)"/></svg>',
+      palette: '<svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a9 9 0 1 0 0 18c1.2 0 2-1 2-2 0-.6-.2-1-.5-1.3-.3-.4-.5-.8-.5-1.2 0-1 .8-1.5 1.8-1.5H17a4 4 0 0 0 4-4c0-4.4-4-8-9-8z"/><circle cx="7.5" cy="10.5" r="1" fill="currentColor" stroke="none"/><circle cx="10.5" cy="7" r="1" fill="currentColor" stroke="none"/><circle cx="15" cy="7.5" r="1" fill="currentColor" stroke="none"/></svg>',
+      stethoscope: '<svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3v6a4 4 0 0 0 8 0V3"/><path d="M9 13v2a5 5 0 0 0 10 0v-2"/><circle cx="19" cy="10" r="2"/></svg>',
+      scale: '<svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M7 21h10M5 7l-3 6a3 3 0 0 0 6 0l-3-6zM19 7l-3 6a3 3 0 0 0 6 0l-3-6zM4 7h16M12 3l4 4-4 4-4-4 4-4z"/></svg>',
+      book: '<svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5.5A2.5 2.5 0 0 1 6.5 3H20v15H6.5A2.5 2.5 0 0 0 4 20.5v-15z"/><path d="M4 20.5A2.5 2.5 0 0 1 6.5 18H20"/></svg>',
+      briefcase: '<svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="1.5"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18"/></svg>',
+      landmark: '<svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21h18M4 21V10M20 21V10M2 10l10-6 10 6M6 10v7M10 10v7M14 10v7M18 10v7"/></svg>',
+      spark: '<svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l1.8 5.6L19 9l-5.2 1.6L12 16l-1.8-5.4L5 9l5.2-1.4L12 2z"/><path d="M19 15l.8 2.4L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.6L19 15z"/></svg>',
+      leaf: '<svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 21c9 0 14-5 14-14 0-1 0-2-.2-3C10 4.5 5 9.5 5 18c0 1 0 2 .2 3z"/><path d="M5 21c3-6 7-10 13-13"/></svg>',
+      shield: '<svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l7 3v6c0 4.5-3 7.5-7 9-4-1.5-7-4.5-7-9V6l7-3z"/><path d="M9.5 12l1.8 1.8L15 10"/></svg>',
+      megaphone: '<svg class="cat-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3 10v4h3l6 4V6L6 10H3z"/><path d="M14 9a3 3 0 0 1 0 6M17 6a7 7 0 0 1 0 12"/></svg>',
+      check: '<svg class="success-seal" viewBox="0 0 80 80" fill="none" stroke="currentColor"><circle cx="40" cy="40" r="34" stroke-width="2.5" stroke-dasharray="5 4"/><path d="M26 41l9 9 19-19" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>'
+    };
+    return icons[name] || '';
+  }
+
+  /* ---------------- Data: qualification categories ---------------- */
+  var CATEGORIES = [
+    {
+      id:'school', title:'10वीं / 12वीं पास', sub:'स्कूल स्तर के पद', icon:'school',
+      fields:[
+        {label:'बोर्ड का नाम', type:'text', required:true},
+        {label:'उत्तीर्ण वर्ष', type:'number', required:true},
+        {label:'प्राप्त प्रतिशत / CGPA', type:'text', required:true},
+        {label:'वांछित पद प्रकार', type:'select', required:true, options:['डाटा एंट्री','सहायक','सुरक्षा गार्ड','डिलीवरी','दुकान सहायक','अन्य']}
+      ]
+    },
+    {
+      id:'iti', title:'ITI / पॉलिटेक्निक डिप्लोमा', sub:'तकनीकी व्यवसाय डिप्लोमा', icon:'wrench',
+      fields:[
+        {label:'ट्रेड / विषय', type:'text', required:true},
+        {label:'संस्थान का नाम', type:'text', required:true},
+        {label:'डिप्लोमा प्रमाणपत्र संख्या', type:'text', required:true},
+        {label:'अनुभव (वर्ष)', type:'number', required:false}
+      ]
+    },
+    {
+      id:'engg', title:'इंजीनियरिंग (B.Tech/B.E)', sub:'इंजीनियरिंग स्नातक', icon:'chip',
+      fields:[
+        {label:'शाखा (Branch)', type:'select', required:true, options:['कंप्यूटर विज्ञान','इलेक्ट्रॉनिक्स','मैकेनिकल','सिविल','इलेक्ट्रिकल','अन्य']},
+        {label:'कॉलेज का नाम', type:'text', required:true},
+        {label:'CGPA / प्रतिशत', type:'text', required:true},
+        {label:'बैकलॉग स्थिति', type:'select', required:true, options:['कोई बैकलॉग नहीं','1-2 बैकलॉग','2 से अधिक']}
+      ]
+    },
+    {
+      id:'commerce', title:'वाणिज्य (B.Com/BBA)', sub:'वाणिज्य व प्रबंधन स्नातक', icon:'calc',
+      fields:[
+        {label:'विशेषज्ञता', type:'select', required:true, options:['अकाउंटिंग','फाइनेंस','मार्केटिंग','HR','सामान्य वाणिज्य']},
+        {label:'कॉलेज का नाम', type:'text', required:true},
+        {label:'प्रतिशत / CGPA', type:'text', required:true}
+      ]
+    },
+    {
+      id:'science', title:'विज्ञान (B.Sc/M.Sc)', sub:'विज्ञान स्नातक/स्नातकोत्तर', icon:'atom',
+      fields:[
+        {label:'मुख्य विषय', type:'text', required:true},
+        {label:'कॉलेज / विश्वविद्यालय', type:'text', required:true},
+        {label:'प्रतिशत / CGPA', type:'text', required:true},
+        {label:'प्रयोगशाला अनुभव', type:'select', required:false, options:['कोई नहीं','6 माह से कम','6 माह - 2 वर्ष','2 वर्ष से अधिक']}
+      ]
+    },
+    {
+      id:'arts', title:'कला (BA/MA)', sub:'मानविकी स्नातक/स्नातकोत्तर', icon:'palette',
+      fields:[
+        {label:'मुख्य विषय', type:'text', required:true},
+        {label:'कॉलेज / विश्वविद्यालय', type:'text', required:true},
+        {label:'प्रतिशत / CGPA', type:'text', required:true}
+      ]
+    },
+    {
+      id:'medical', title:'मेडिकल (MBBS/नर्सिंग/फार्मेसी)', sub:'चिकित्सा एवं स्वास्थ्य क्षेत्र', icon:'stethoscope',
+      fields:[
+        {label:'योग्यता', type:'select', required:true, options:['MBBS','BDS','GNM नर्सिंग','B.Sc नर्सिंग','D.Pharm','B.Pharm','पैरामेडिकल']},
+        {label:'काउंसिल पंजीकरण संख्या', type:'text', required:true},
+        {label:'इंटर्नशिप स्थिति', type:'select', required:true, options:['पूर्ण','चल रही है','शेष']},
+        {label:'विशेषज्ञता (यदि कोई हो)', type:'text', required:false}
+      ]
+    },
+    {
+      id:'law', title:'विधि (LLB/LLM)', sub:'कानूनी पेशेवर', icon:'scale',
+      fields:[
+        {label:'बार काउंसिल नामांकन संख्या', type:'text', required:true},
+        {label:'योग्यता', type:'select', required:true, options:['LLB','LLM','5 वर्षीय एकीकृत विधि']},
+        {label:'विशेषज्ञता', type:'select', required:false, options:['आपराधिक','सिविल','कॉर्पोरेट','श्रम कानून','अन्य']}
+      ]
+    },
+    {
+      id:'teaching', title:'शिक्षा (B.Ed/D.El.Ed)', sub:'शिक्षण एवं प्रशिक्षण', icon:'book',
+      fields:[
+        {label:'B.Ed / D.El.Ed प्रमाणपत्र संख्या', type:'text', required:true},
+        {label:'विषय विशेषज्ञता', type:'text', required:true},
+        {label:'शिक्षण अनुभव (वर्ष)', type:'number', required:false},
+        {label:'TET/CTET स्थिति', type:'select', required:false, options:['उत्तीर्ण','आवेदित','लागू नहीं']}
+      ]
+    },
+    {
+      id:'pg', title:'स्नातकोत्तर प्रबंधन (MBA/MCA)', sub:'उच्च प्रबंधन व तकनीकी योग्यता', icon:'briefcase',
+      fields:[
+        {label:'विशेषज्ञता', type:'select', required:true, options:['फाइनेंस','मार्केटिंग','ऑपरेशन्स','IT','HR','सिस्टम्स']},
+        {label:'प्रवेश परीक्षा स्कोर (CAT/MAT/अन्य)', type:'text', required:false},
+        {label:'कार्य अनुभव (वर्ष)', type:'number', required:false}
+      ]
+    },
+    {
+      id:'govt', title:'सरकारी परीक्षा उम्मीदवार', sub:'SSC / बैंकिंग / रेलवे तैयारी', icon:'landmark',
+      fields:[
+        {label:'परीक्षा श्रेणी', type:'select', required:true, options:['SSC','बैंकिंग','रेलवे','राज्य PSC','UPSC','अन्य']},
+        {label:'वांछित पद', type:'text', required:true},
+        {label:'आरक्षण श्रेणी', type:'select', required:false, options:['सामान्य','OBC','SC','ST','EWS','अन्य']},
+        {label:'राज्य', type:'text', required:true}
+      ]
+    },
+    {
+      id:'future', title:'भविष्य के कौशल क्षेत्र', sub:'AI, डेटा साइंस, साइबर सुरक्षा आदि', icon:'spark',
+      fields:[
+        {label:'कौशल क्षेत्र', type:'select', required:true, options:['AI / मशीन लर्निंग','डेटा साइंस','साइबर सुरक्षा','क्लाउड कंप्यूटिंग','डिजिटल मार्केटिंग','UI/UX डिज़ाइन','इलेक्ट्रिक व्हीकल तकनीक','नवीकरणीय ऊर्जा']},
+        {label:'प्रमाणपत्र / कोर्स (यदि कोई हो)', type:'text', required:false},
+        {label:'पोर्टफोलियो / GitHub / LinkedIn लिंक', type:'text', required:false}
+      ]
+    }
+  ];
+
+  var FUTURE_IDS_META = [
+    {key:'AI / मशीन लर्निंग', icon:'chip', desc:'मॉडल प्रशिक्षण, ऑटोमेशन और इंटेलिजेंट सिस्टम बनाने वाली भूमिकाएँ।'},
+    {key:'डेटा साइंस', icon:'atom', desc:'डेटा विश्लेषण, विज़ुअलाइज़ेशन और निर्णय-सहायक अंतर्दृष्टि।'},
+    {key:'साइबर सुरक्षा', icon:'shield', desc:'नेटवर्क, डेटा और सिस्टम को खतरों से सुरक्षित रखने वाली भूमिकाएँ।'},
+    {key:'नवीकरणीय ऊर्जा / EV', icon:'leaf', desc:'सौर, पवन और इलेक्ट्रिक व्हीकल तकनीक से जुड़े तकनीकी पद।'},
+    {key:'डिजिटल मार्केटिंग', icon:'megaphone', desc:'SEO, सोशल मीडिया और ब्रांड ग्रोथ से जुड़े रचनात्मक-तकनीकी पद।'},
+    {key:'क्लाउड कंप्यूटिंग', icon:'chip', desc:'सर्वर, इंफ्रास्ट्रक्चर और स्केलेबल सिस्टम प्रबंधन।'},
+    {key:'UI/UX डिज़ाइन', icon:'palette', desc:'उपयोगकर्ता अनुभव और उत्पाद डिज़ाइन से जुड़ी भूमिकाएँ।'},
+    {key:'FinTech / ब्लॉकचेन', icon:'briefcase', desc:'डिजिटल भुगतान और वित्तीय तकनीक में उभरते अवसर।'}
+  ];
+
+  /* ---------------- Data: job listings ---------------- */
+  var JOBS = [
+    {id:1, title:'लैब असिस्टेंट', company:'राज्य स्वास्थ्य विभाग', location:'जयपुर', salary:'₹18,000–22,000', cat:'science', type:'पूर्णकालिक', posted:'2 दिन पहले'},
+    {id:2, title:'जूनियर इंजीनियर (सिविल)', company:'नगर निगम निर्माण प्रभाग', location:'जोधपुर', salary:'₹32,000–40,000', cat:'engg', type:'पूर्णकालिक', posted:'1 दिन पहले'},
+    {id:3, title:'CNC मशीन ऑपरेटर', company:'भारत ऑटो कंपोनेंट्स', location:'पुणे', salary:'₹16,000–20,000', cat:'iti', type:'पूर्णकालिक', posted:'5 दिन पहले'},
+    {id:4, title:'अकाउंट्स एक्ज़ीक्यूटिव', company:'लक्ष्मी ट्रेडर्स', location:'अहमदाबाद', salary:'₹22,000–28,000', cat:'commerce', type:'पूर्णकालिक', posted:'3 दिन पहले'},
+    {id:5, title:'कंटेंट राइटर (हिंदी)', company:'मीडिया वर्क्स', location:'रिमोट', salary:'₹20,000–26,000', cat:'arts', type:'पूर्णकालिक', posted:'आज', },
+    {id:6, title:'स्टाफ नर्स (GNM)', company:'सिटी केयर हॉस्पिटल', location:'लखनऊ', salary:'₹24,000–30,000', cat:'medical', type:'पूर्णकालिक', posted:'4 दिन पहले'},
+    {id:7, title:'लीगल एसोसिएट', company:'शर्मा एंड एसोसिएट्स', location:'दिल्ली', salary:'₹28,000–35,000', cat:'law', type:'पूर्णकालिक', posted:'6 दिन पहले'},
+    {id:8, title:'TGT शिक्षक (गणित)', company:'सरस्वती विद्या मंदिर', location:'कानपुर', salary:'₹25,000–30,000', cat:'teaching', type:'पूर्णकालिक', posted:'2 दिन पहले'},
+    {id:9, title:'बिज़नेस एनालिस्ट', company:'नेक्स्टजेन सॉल्यूशंस', location:'बेंगलुरु', salary:'₹45,000–60,000', cat:'pg', type:'पूर्णकालिक', posted:'1 दिन पहले'},
+    {id:10, title:'क्लर्क (सामान्य)', company:'राज्य सहकारी बैंक', location:'भोपाल', salary:'₹21,000–25,000', cat:'govt', type:'पूर्णकालिक', posted:'7 दिन पहले'},
+    {id:11, title:'AI/ML इंजीनियर (एंट्री)', company:'निओसॉफ्ट लैब्स', location:'रिमोट', salary:'₹40,000–55,000', cat:'future', type:'पूर्णकालिक', posted:'आज'},
+    {id:12, title:'साइबर सुरक्षा विश्लेषक', company:'सिक्योरनेट सिस्टम्स', location:'हैदराबाद', salary:'₹38,000–50,000', cat:'future', type:'पूर्णकालिक', posted:'3 दिन पहले'},
+    {id:13, title:'डिजिटल मार्केटिंग एक्ज़ीक्यूटिव', company:'ब्राइटएज मीडिया', location:'सूरत', salary:'₹18,000–24,000', cat:'future', type:'पूर्णकालिक', posted:'2 दिन पहले'},
+    {id:14, title:'फार्मासिस्ट', company:'अपोलो फार्मेसी', location:'चेन्नई', salary:'₹19,000–24,000', cat:'medical', type:'पूर्णकालिक', posted:'5 दिन पहले'},
+    {id:15, title:'इलेक्ट्रीशियन (ITI)', company:'ग्रीनफील्ड इंफ्रा', location:'नागपुर', salary:'₹15,000–19,000', cat:'iti', type:'पूर्णकालिक', posted:'4 दिन पहले'},
+    {id:16, title:'सॉफ्टवेयर डेवलपर (Java)', company:'कोडक्राफ्ट टेक्नोलॉजीज', location:'पुणे', salary:'₹35,000–48,000', cat:'engg', type:'पूर्णकालिक', posted:'1 दिन पहले'},
+    {id:17, title:'रेलवे टिकट परीक्षक (तैयारी बैच)', company:'सरकारी परीक्षा केंद्र', location:'पटना', salary:'लागू नहीं', cat:'govt', type:'प्रशिक्षण', posted:'8 दिन पहले'},
+    {id:18, title:'ग्राफिक व UI डिज़ाइनर', company:'पिक्सेलफोर्ज स्टूडियो', location:'रिमोट', salary:'₹25,000–35,000', cat:'future', type:'फ्रीलांस', posted:'2 दिन पहले'},
+    {id:19, title:'दुकान सहायक', company:'सिटी सुपरमार्ट', location:'जयपुर', salary:'₹12,000–15,000', cat:'school', type:'पूर्णकालिक', posted:'आज'},
+    {id:20, title:'सहायक प्राध्यापक (अंग्रेज़ी)', company:'राजकीय महाविद्यालय', location:'उदयपुर', salary:'₹42,000–55,000', cat:'teaching', type:'पूर्णकालिक', posted:'6 दिन पहले'}
+  ];
+
+  var applications = []; // in-memory only (session), replace with API calls for production
+  var activeCategoryFilter = 'all';
+  var currentModalContext = null; // {job, categoryId}
+
+  var catById = {};
+  CATEGORIES.forEach(function(c){ catById[c.id] = c; });
+
+  /* ---------------- Render: categories ---------------- */
+  function renderCategories(){
+    var grid = document.getElementById('catGrid');
+    grid.innerHTML = CATEGORIES.map(function(c){
+      var count = JOBS.filter(function(j){ return j.cat === c.id; }).length;
+      return '' +
+        '<div class="cat-card">' +
+          icon(c.icon) +
+          '<h3>'+c.title+'</h3>' +
+          '<div class="cat-sub">'+c.sub+'</div>' +
+          '<div class="cat-count">'+count+' सक्रिय पद</div>' +
+          '<button type="button" class="btn btn-outline btn-sm" onclick="window.__pm.openCategoryForm(\''+c.id+'\')">फ़ॉर्म भरें</button>' +
+        '</div>';
+    }).join('');
+  }
+
+  function renderFuture(){
+    var grid = document.getElementById('futureGrid');
+    grid.innerHTML = FUTURE_IDS_META.map(function(f){
+      return '' +
+        '<div class="future-card">' +
+          icon(f.icon) +
+          '<h3>'+f.key+'</h3>' +
+          '<p>'+f.desc+'</p>' +
+          '<button type="button" class="btn btn-brass btn-sm" onclick="window.__pm.openCategoryForm(\'future\')">आवेदन करें</button>' +
+        '</div>';
+    }).join('');
+  }
+
+  /* ---------------- Render: filter chips ---------------- */
+  function renderFilterBar(){
+    var bar = document.getElementById('filterBar');
+    var search = document.getElementById('jobSearch');
+    var chipsHtml = '<button type="button" class="chip active" data-cat="all">सभी</button>' +
+      CATEGORIES.map(function(c){
+        return '<button type="button" class="chip" data-cat="'+c.id+'">'+c.title.split(' (')[0]+'</button>';
+      }).join('');
+    bar.innerHTML = chipsHtml;
+    bar.appendChild(search);
+
+    bar.querySelectorAll('.chip').forEach(function(chip){
+      chip.addEventListener('click', function(){
+        bar.querySelectorAll('.chip').forEach(function(c){ c.classList.remove('active'); });
+        chip.classList.add('active');
+        activeCategoryFilter = chip.getAttribute('data-cat');
+        renderJobs();
+      });
+    });
+  }
+
+  /* ---------------- Render: job ledger ---------------- */
+  function renderJobs(){
+    var ledger = document.getElementById('jobLedger');
+    var searchVal = (document.getElementById('jobSearch').value || '').trim().toLowerCase();
+
+    var filtered = JOBS.filter(function(j){
+      var catOk = activeCategoryFilter === 'all' || j.cat === activeCategoryFilter;
+      var text = (j.title + ' ' + j.company + ' ' + j.location).toLowerCase();
+      var searchOk = !searchVal || text.indexOf(searchVal) !== -1;
+      return catOk && searchOk;
+    });
+
+    if(!filtered.length){
+      ledger.innerHTML = '<p class="empty-note">इस खोज से मेल खाता कोई पद नहीं मिला। फ़िल्टर बदलकर देखें।</p>';
+      return;
+    }
+
+    ledger.innerHTML = filtered.map(function(j){
+      var cat = catById[j.cat];
+      return '' +
+      '<div class="job-row">' +
+        '<div><div class="job-title">'+j.title+'</div><div class="company">'+j.company+'</div></div>' +
+        '<div><span class="meta-label">योग्यता</span><span class="meta-val">'+(cat?cat.title.split(' (')[0]:'—')+'</span></div>' +
+        '<div><span class="meta-label">स्थान</span><span class="meta-val">'+j.location+'</span></div>' +
+        '<div><span class="meta-label">वेतन</span><span class="meta-val">'+j.salary+'</span></div>' +
+        '<div class="apply-cell" style="display:flex;flex-direction:column;align-items:flex-end;gap:6px;">' +
+          '<span class="posted">'+j.posted+' · '+j.type+'</span>' +
+          '<button type="button" class="btn btn-ink btn-sm" onclick="window.__pm.openJobForm('+j.id+')">आवेदन करें</button>' +
+        '</div>' +
+      '</div>';
+    }).join('');
+  }
+
+  /* ---------------- Hero search category select ---------------- */
+  function fillHeroCategorySelect(){
+    var sel = document.getElementById('hsCategory');
+    CATEGORIES.forEach(function(c){
+      var opt = document.createElement('option');
+      opt.value = c.id;
+      opt.textContent = c.title.split(' (')[0];
+      sel.appendChild(opt);
+    });
+  }
+
+  /* ---------------- Modal / dynamic form ---------------- */
+  function fieldMarkup(f, idx){
+    var name = 'extra_'+idx;
+    var reqAttr = f.required ? 'required' : '';
+    var reqMark = f.required ? ' *' : '';
+    var control = '';
+    if(f.type === 'select'){
+      control = '<select id="'+name+'" name="'+name+'" '+reqAttr+'>' +
+        '<option value="">चुनें</option>' +
+        f.options.map(function(o){ return '<option value="'+o+'">'+o+'</option>'; }).join('') +
+        '</select>';
+    } else if(f.type === 'textarea'){
+      control = '<textarea id="'+name+'" name="'+name+'" rows="3" '+reqAttr+'></textarea>';
+    } else {
+      control = '<input id="'+name+'" name="'+name+'" type="'+f.type+'" '+reqAttr+'>';
+    }
+    return '<div class="form-field"><label for="'+name+'">'+f.label+reqMark+'</label>'+control+'</div>';
+  }
+
+  function buildFormHTML(categoryId, job){
+    var cat = catById[categoryId];
+    var extraFieldsHtml = cat.fields.map(fieldMarkup).join('');
+
+    return '' +
+    '<form id="appForm" novalidate>' +
+      '<div class="form-grid">' +
+
+        '<div class="form-field full"><div class="form-section-title">व्यक्तिगत जानकारी</div></div>' +
+        '<div class="form-field"><label for="fName">पूरा नाम *</label><input id="fName" required type="text"></div>' +
+        '<div class="form-field"><label for="fDob">जन्म तिथि *</label><input id="fDob" required type="date"></div>' +
+        '<div class="form-field"><label for="fEmail">ईमेल *</label><input id="fEmail" required type="email"></div>' +
+        '<div class="form-field"><label for="fPhone">मोबाइल नंबर *</label><input id="fPhone" required type="tel" pattern="[0-9]{10}" placeholder="10 अंकों का नंबर"></div>' +
+        '<div class="form-field"><label for="fGender">लिंग</label><select id="fGender"><option value="">चुनें</option><option>पुरुष</option><option>महिला</option><option>अन्य</option></select></div>' +
+        '<div class="form-field"><label for="fCity">वर्तमान शहर *</label><input id="fCity" required type="text"></div>' +
+
+        '<div class="form-field full"><div class="form-section-title">योग्यता विवरण — '+cat.title+'</div></div>' +
+        extraFieldsHtml +
+
+        '<div class="form-field full"><div class="form-section-title">दस्तावेज़</div></div>' +
+        '<div class="form-field"><label for="fResume">रिज़्यूमे अपलोड करें (PDF) *</label><input id="fResume" required type="file" accept=".pdf,.doc,.docx"></div>' +
+        '<div class="form-field"><label for="fPhoto">फोटो अपलोड करें (वैकल्पिक)</label><input id="fPhoto" type="file" accept="image/*"></div>' +
+
+      '</div>' +
+    '</form>';
+  }
+
+  function openModal(job, categoryIdArg){
+    var categoryId = job ? job.cat : categoryIdArg;
+    var cat = catById[categoryId];
+    currentModalContext = {job: job, categoryId: categoryId};
+
+    document.getElementById('modalTitle').textContent = job ? ('आवेदन: '+job.title) : ('पंजीकरण: '+cat.title);
+    document.getElementById('modalSub').textContent = job ? (job.company+' · '+job.location) : (cat.sub);
+
+    var body = document.getElementById('modalBody');
+    body.innerHTML = buildFormHTML(categoryId, job);
+
+    renderModalFoot(false);
+
+    var backdrop = document.getElementById('modalBackdrop');
+    backdrop.classList.add('open');
+    document.body.style.overflow = 'hidden';
+
+    var firstInput = document.getElementById('fName');
+    if(firstInput){ setTimeout(function(){ firstInput.focus(); }, 50); }
+  }
+
+  function renderModalFoot(success){
+    var existing = document.querySelector('.modal-foot');
+    if(existing){ existing.remove(); }
+    var modal = document.querySelector('.modal');
+    var foot = document.createElement('div');
+    foot.className = 'modal-foot';
+    if(success){
+      foot.innerHTML = '<button type="button" class="btn btn-ink" id="modalDoneBtn">बंद करें</button>';
+    } else {
+      foot.innerHTML =
+        '<button type="button" class="btn btn-outline" id="modalCancelBtn">रद्द करें</button>' +
+        '<button type="button" class="btn btn-brass" id="modalSubmitBtn">आवेदन जमा करें</button>';
+    }
+    modal.appendChild(foot);
+
+    if(success){
+      document.getElementById('modalDoneBtn').addEventListener('click', closeModal);
+    } else {
+      document.getElementById('modalCancelBtn').addEventListener('click', closeModal);
+      document.getElementById('modalSubmitBtn').addEventListener('click', handleSubmit);
+    }
+  }
+
+  function closeModal(){
+    document.getElementById('modalBackdrop').classList.remove('open');
+    document.body.style.overflow = '';
+    currentModalContext = null;
+  }
+
+  function genAppId(){
+    var year = new Date().getFullYear();
+    var rand = Math.floor(10000 + Math.random()*89999);
+    return 'PM-'+year+'-'+rand;
+  }
+
+  async function handleSubmit(){
+    var form = document.getElementById('appForm');
+    if(!form.checkValidity()){
+      form.reportValidity();
+      return;
+    }
+
+    var ctx = currentModalContext;
+    var cat = catById[ctx.categoryId];
+    var formData = new FormData();
+
+    // Personal information
+    formData.append('name', document.getElementById('fName').value.trim());
+    formData.append('dob', document.getElementById('fDob').value);
+    formData.append('email', document.getElementById('fEmail').value.trim());
+    formData.append('phone', document.getElementById('fPhone').value.trim());
+    formData.append('gender', document.getElementById('fGender').value);
+    formData.append('city', document.getElementById('fCity').value.trim());
+
+    // Job information
+    formData.append('jobTitle', ctx.job ? ctx.job.title : 'सामान्य पंजीकरण');
+    formData.append('company', ctx.job ? ctx.job.company : '—');
+    formData.append('category', cat.title.split(' (')[0]);
+
+    // Dynamic category fields
+    if(cat.fields && Array.isArray(cat.fields)){
+      cat.fields.forEach(function(field, idx){
+        var element = document.getElementById('extra_' + idx);
+        if(element){
+          formData.append('extra_' + idx, element.value);
+        }
+      });
+    }
+
+    // Resume upload
+    var resumeInput = document.getElementById('fResume');
+    if(resumeInput && resumeInput.files && resumeInput.files.length > 0){
+      formData.append('resume', resumeInput.files[0]);
+    }
+
+    // Photo upload
+    var photoInput = document.getElementById('fPhoto');
+    if(photoInput && photoInput.files && photoInput.files.length > 0){
+      formData.append('photo', photoInput.files[0]);
+    }
+
+    try{
+      var response = await fetch('/api/applications', {
+        method: 'POST',
+        body: formData
+      });
+
+      var result = await response.json();
+      console.log('Server Response:', result);
+
+      if(!response.ok || !result.success){
+        throw new Error(result.message || 'Application save nahi hui');
+      }
+
+      // Keep tracking table working in the current browser session
+      var record = {
+        id: result.applicationId,
+        applicant: document.getElementById('fName').value.trim(),
+        jobTitle: ctx.job ? ctx.job.title : 'सामान्य पंजीकरण',
+        company: ctx.job ? ctx.job.company : '—',
+        category: cat.title.split(' (')[0],
+        date: new Date().toLocaleDateString('hi-IN'),
+        status: 'समीक्षा में'
+      };
+
+      applications.unshift(record);
+      renderTrackTable();
+
+      var body = document.getElementById('modalBody');
+      body.innerHTML =
+        '<div class="success-panel">' +
+          icon('check') +
+          '<h3>आवेदन सफलतापूर्वक जमा हुआ</h3>' +
+          '<p>आपकी संदर्भ संख्या: <span class="app-id">'+result.applicationId+'</span></p>' +
+          '<p>आपका आवेदन MongoDB में सफलतापूर्वक save हो गया है।</p>' +
+        '</div>';
+      renderModalFoot(true);
+
+    }catch(error){
+      console.error('❌ Submit Error:', error);
+      alert('Application submit नहीं हो सका: ' + error.message);
+    }
+  }
+
+  /* ---------------- Track applications ---------------- */
+  function renderTrackTable(){
+    var area = document.getElementById('trackArea');
+    if(!applications.length){
+      area.innerHTML = '<div class="track-empty">अभी तक कोई आवेदन नहीं किया गया है। किसी श्रेणी या पद पर "आवेदन करें" चुनें।</div>';
+      return;
+    }
+    area.innerHTML =
+      '<table class="track-table">' +
+        '<thead><tr><th>संदर्भ संख्या</th><th>पद</th><th>कंपनी</th><th>श्रेणी</th><th>दिनांक</th><th>स्थिति</th></tr></thead>' +
+        '<tbody>' +
+          applications.map(function(a){
+            return '<tr>' +
+              '<td class="id-cell">'+a.id+'</td>' +
+              '<td>'+a.jobTitle+'</td>' +
+              '<td>'+a.company+'</td>' +
+              '<td>'+a.category+'</td>' +
+              '<td>'+a.date+'</td>' +
+              '<td><span class="status-pill">'+a.status+'</span></td>' +
+            '</tr>';
+          }).join('') +
+        '</tbody>' +
+      '</table>';
+  }
+
+  /* ---------------- Nav toggle ---------------- */
+  function setupNavToggle(){
+    var toggle = document.getElementById('navToggle');
+    var nav = document.getElementById('mainNav');
+    toggle.addEventListener('click', function(){
+      var open = nav.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    nav.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){ nav.classList.remove('open'); toggle.setAttribute('aria-expanded','false'); });
+    });
+  }
+
+  /* ---------------- Hero search wiring ---------------- */
+  function setupHeroSearch(){
+    document.getElementById('heroSearchForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      var kw = document.getElementById('hsKeyword').value;
+      var cat = document.getElementById('hsCategory').value;
+      var loc = document.getElementById('hsLocation').value;
+
+      activeCategoryFilter = cat || 'all';
+      document.getElementById('jobSearch').value = [kw, loc].filter(Boolean).join(' ');
+      document.querySelectorAll('#filterBar .chip').forEach(function(c){
+        c.classList.toggle('active', c.getAttribute('data-cat') === activeCategoryFilter);
+      });
+      renderJobs();
+      document.getElementById('jobs').scrollIntoView({behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'});
+    });
+  }
+
+  /* ---------------- Modal backdrop / close wiring ---------------- */
+  function setupModalChrome(){
+    var backdrop = document.getElementById('modalBackdrop');
+    backdrop.addEventListener('click', function(e){
+      if(e.target === backdrop){ closeModal(); }
+    });
+    document.getElementById('modalCloseBtn').addEventListener('click', closeModal);
+    document.addEventListener('keydown', function(e){
+      if(e.key === 'Escape' && backdrop.classList.contains('open')){ closeModal(); }
+    });
+  }
+
+  /* ---------------- Stats ---------------- */
+  function renderStats(){
+    document.getElementById('statJobs').textContent = JOBS.length + '+';
+    document.getElementById('statCats').textContent = CATEGORIES.length;
+  }
+
+  /* ---------------- Decorative rosette + one-time seal stamp ---------------- */
+  function renderRosette(){
+    var g = document.getElementById('rosettePetals');
+    if(!g) return;
+    var cx = 140, cy = 140, rInner = 100, rOuter = 128, lines = [];
+    for(var i = 0; i < 48; i++){
+      var angle = (Math.PI * 2 * i) / 48;
+      var x1 = cx + rInner * Math.cos(angle);
+      var y1 = cy + rInner * Math.sin(angle);
+      var x2 = cx + rOuter * Math.cos(angle);
+      var y2 = cy + rOuter * Math.sin(angle);
+      lines.push('<line x1="'+x1.toFixed(1)+'" y1="'+y1.toFixed(1)+'" x2="'+x2.toFixed(1)+'" y2="'+y2.toFixed(1)+'"/>');
+    }
+    g.innerHTML = lines.join('');
+  }
+
+  function triggerSealStamp(){
+    var seal = document.getElementById('heroSeal');
+    if(!seal) return;
+    var reduced = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(reduced) return;
+    seal.classList.add('stamp-in');
+  }
+
+  /* ---------------- Public hooks used by inline onclick ---------------- */
+  window.__pm = {
+    openJobForm: function(jobId){
+      var job = JOBS.filter(function(j){ return j.id === jobId; })[0];
+      if(job){ openModal(job, null); }
+    },
+    openCategoryForm: function(categoryId){
+      openModal(null, categoryId);
+    }
+  };
+  window.openModal = openModal; // used by header "मुफ़्त पंजीकरण" button
+
+  /* ---------------- Init ---------------- */
+  document.addEventListener('DOMContentLoaded', function(){
+    renderCategories();
+    renderFuture();
+    fillHeroCategorySelect();
+    renderFilterBar();
+    renderJobs();
+    renderTrackTable();
+    renderStats();
+    renderRosette();
+    triggerSealStamp();
+    setupNavToggle();
+    setupHeroSearch();
+    setupModalChrome();
+
+    document.getElementById('jobSearch').addEventListener('input', renderJobs);
+  });
+
+})();
+</script>
+</body>
+</html>
